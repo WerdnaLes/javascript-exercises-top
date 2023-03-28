@@ -16,11 +16,10 @@ const sumAll = function (first, second) {
     first = temp;
   }
 
-  let sum = first;
-  const length = second - first;
+  let sum = 0;
 
-  for (let i = 0; i < length; i++) {
-    sum += ++first;
+  for (let i = first; i <= second; i++) {
+    sum += i;
   }
   return sum;
 };
