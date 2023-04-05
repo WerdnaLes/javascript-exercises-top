@@ -28,7 +28,19 @@ const power = function (a, b) {
   return a ** b;
 };
 
-const factorial = function () {};
+const factorial = function (number) {
+  if (number === 1 || number === 0) {
+    return 1;
+  }
+  let result = number;
+
+  for (let i = 1; i < number; i++) {
+    result = result * i;
+  }
+  return result;
+  // recursive call:
+  // return factorial(number - 1) * number;
+};
 
 // Do not edit below this line
 module.exports = {
