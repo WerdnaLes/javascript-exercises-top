@@ -17,6 +17,5 @@ const fibonacci = function (number) {
   return fibonacciArray.pop();
 };
 
-console.log(fibonacci(10)); // must return 55
 // Do not edit below this line
 module.exports = fibonacci;
